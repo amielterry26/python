@@ -20,8 +20,10 @@ Number values with a decimal. </br>
 Example: `gpa = 3.4`
 
 ### **Booleans**:
-Variables that are either True or False. </br>
+
+Variables thet are either True or False. </br>
 Example: `is_raining = True`
+
 ---
 **Full variable Code Example:**
 
