@@ -66,6 +66,7 @@ friends += 1
 
 ## Concept 3: Typecasting
 ___
+
 **Purpose :** The process of converting a variable from one data type to another: str(), int(), float(), bool().
 </br>
 Note: You can find out what data type a variable is by using the `type` command.
