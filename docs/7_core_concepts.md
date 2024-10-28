@@ -102,7 +102,7 @@ ___
 - booleans only output "True" or "False". Changing the value inside the variable when typecasting will mostly return true. </br>
 A good usecase for it would be to use it for user registration. 
 </br>
-</br>
+
 
 **Example: False** 
   ```python
