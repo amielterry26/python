@@ -1,1 +1,2 @@
-.iml
+*.iml       # Ignores all .iml files anywhere in the project
+**/*.iml    # Ignores all .iml files, including those in subdirectories
