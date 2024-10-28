@@ -46,10 +46,13 @@ Boolean: `is_raining = true`
 
 **<u>Augmented Assignment: </u>** </br>
 
-If you want to perform an arithmetic operation on a variable you can use augmented assignment. </br>
+
+**Purpose:** If you don't want to do long hand arithmetic operators i.e. (friends = friends + 1), </br>
+you can use an augmented assignment. i.e. (friends += 1)
+
 
 It is performed by typing the variable and then adding the arithmetic Operation (+, -, /, *, //, *) directly to an ( = ) sign and then printing it. 
-</br> 
+  </br> 
 
 ### <u>**Exampele:**</u>
 
@@ -58,5 +61,64 @@ friends = 5
 friends += 1
 
 ` print(friend) = 6 `
-            
+</br>
+</br>
 
+## Concept 3: Typecasting
+**Purpose :** The process of converting a variable from one data type to another: str(), int(), float(), bool().
+</br>
+Note: You can find out what data type a variable is by using the `type` command.
+</br>
+---
+**Example:** </br>
+```python
+name = "Amiel"
+age = 30
+gpa = 3.2
+is_engineer = True
+
+print(type(age))
+```
+output = <class 'int'>
+</br>
+---
+**Example:** </br>
+```python
+name = "Amiel"
+age = 30
+gpa = 3.2
+is_engineer = True
+
+gpa = int(gpa)
+
+print(gpa)
+```
+output = 3
+___
+**Important Note:** </br>
+- booleans only output "True" or "False". Changing the value inside the variable when typecasting will mostly return true. </br>
+A good usecase for it would be to use it for user registration. 
+</br>
+</br>
+
+**exampele: False** 
+  ```python
+  username = ""
+  username = bool(username)
+
+  print(username)
+  ```
+
+  output = false
+___
+  **exampele: True**
+  ```python
+  username = "amiel"
+  username = bool(username)
+
+  print(username)
+  ```
+
+output = true
+
+## 
