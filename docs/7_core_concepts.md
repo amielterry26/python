@@ -34,7 +34,7 @@ Boolean: `is_raining = true`
 </br>
 </br>
 ## Concept 2: Basic Arithmetic Operations
-
+___
 ### <u>**Arithmetic**</u>
 #####
 **addition :** + </br>
@@ -65,6 +65,7 @@ friends += 1
 </br>
 
 ## Concept 3: Typecasting
+___
 **Purpose :** The process of converting a variable from one data type to another: str(), int(), float(), bool().
 </br>
 Note: You can find out what data type a variable is by using the `type` command.
@@ -101,7 +102,7 @@ A good usecase for it would be to use it for user registration.
 </br>
 </br>
 
-**exampele: False** 
+**Example: False** 
   ```python
   username = ""
   username = bool(username)
@@ -111,7 +112,7 @@ A good usecase for it would be to use it for user registration.
 
   output = false
 ___
-  **exampele: True**
+  **Example: True**
   ```python
   username = "amiel"
   username = bool(username)
@@ -120,5 +121,35 @@ ___
   ```
 
 output = true
+</br>
 
-## User input (I/O)
+## Concept 4: User input (I/O)
+___
+This is how you get user input to store a variable to use later in the module. </br>
+`input()` is to store input into variable. </br>
+`print()` is to output the result. </br>
+
+**Example:** </br>
+```python
+name = input("What is your name? ")
+age = input("How old are you?")
+
+print(f"Hello {name}, you are {age} years old!")
+```
+output = Hello amiel, you are 30 years old!
+___
+**Important note:**
+If you want to do anything to the store variable outside of printing it, you must define the data type (typecast) and before hand.
+</br>
+Also ensure that when typecasting, put `int()`, `float()`, `str()`, or `bool()` **_<u>before</u>_** `input()`. 
+
+**Example:**
+```python
+name = input("What is your name? ")
+age = int(input("How old are you?" ))
+
+age += 1
+
+print(f"Hello {name}, you are {age} years old!")
+```
+output : Hello amiel, you are 31 years old!
