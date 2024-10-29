@@ -264,8 +264,9 @@ else:
 Logical operators allows us to evaluate multiple conditions (`or`, `and`, `not`)
 - `or` - at least one conditions must be True
 - `and` - both conditions must be True
-- `not` - inverst the condition (not False, not True)
-
+- `not` - inverts the condition (not False, not True)
+___
+### `or`
 ```python
 temp = 25
 is_raining = False
@@ -274,4 +275,19 @@ if temp > 35 or temp < 0 or is_raining:
     print("The outdoor event is cancelled")
 else:
     print("The outdoor event is still scheduled")
+```
+**Important note:** </br>
+Ensure that you add the variable or data type everytime you separate a statement by a logical operator, i.e. : </br> 
+ `or`, `and`, `not`. </br>
+
+View example about for reference.</br>
+___
+### `and`
+```python
+temp = 30
+is_sunny = True
+
+if temp >= 28 and is_sunny:
+    print("It's too hot outside")
+    print("It is Sunny")
 ```
