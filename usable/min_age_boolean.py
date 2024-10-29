@@ -1,4 +1,3 @@
-# This is a testing environment for Python scripts
 # Define the minimum age requirement
 minimum_age = 21
 

@@ -155,3 +155,107 @@ age += 1
 print(f"Hello {name}, you are {age} years old!")
 ```
 output : Hello amiel, you are 31 years old!
+</br>
+## Concept 5: `if` statements
+if statements = can execute some code if a condition is True, otherwise can have secondary & tertiary conditional actions. 
+Allows for basic decision-making. </br>
+(if, elif, else).
+
+**Example:**
+```python
+age = int(input("How old are you? "))
+
+if age >= 18: 
+    print("You are old enough!")
+else: 
+    print("You are not old enough.")
+```
+___
+`elif` statements = statements that are a secondary condition to the `if` statement. 
+`else` statements = statements that everything else falls under. </br>
+**example:**
+```python
+age = int(input("How old are you? "))
+
+if age > 65:
+  print("You are a senior citizen")
+elif age >= 18:
+  print("You are old enough!")
+elif age <= 0:
+  print("You haven't been born yet!")
+else:
+  print("You are not old enough.")
+```
+<u>**Important note:**</u> 
+</br>
+Python will read the statement in the order that you put it. Once the value (input) meets the condition, the module will stop reading statements and print which condition it met. </br>
+</br>So the order in which you type your statements matters. Ensure that you write the statements so that they are conditionally true or false in order. 
+___
+
+### `if` statements with Booleans: 
+You can also use `booleans` with `if` statements. 
+if would be good with things like authentication and permission based applications. 
+</br>
+**Example 1:**
+```python
+# Simulate correct credentials
+correct_username = "admin"
+correct_password = "password123"
+
+username = str(input("Enter your username: "))
+password = str(input("Enter your password: "))
+
+# Check if the credentials are correct
+if username == correct_username and password == correct_password:
+  is_logged_in = True
+else:
+  is_logged_in = False
+
+# Use the Boolean variable in an if statement
+if is_logged_in:
+  print("Welcome back!")
+else:
+  print("Invalid credentials, please try again.")
+
+```
+**Example 2:**
+```python
+# Define the minimum age requirement
+minimum_age = 21
+
+# Ask the user for their age
+age = int(input("Please enter your age: "))
+
+# Check if the user meets the age requirement
+if age >= minimum_age:
+  is_allowed_access = True
+else:
+  is_allowed_access = False
+
+# Use the Boolean variable in an if statement
+if is_allowed_access:
+  print("Access granted! Welcome to the restricted section.")
+else:
+  print("Access denied. You must be at least 21 years old.")
+```
+___
+**Example 3 (where boolean is not contingent on input):**
+```python
+age = int(input("How old are you? "))
+has_ticket = True
+price = 10.00
+
+# Check age credentials
+if age <= 0:
+  print("error, please enter a valid age")
+elif age > 65:
+  print("You are a senior citizen")
+  print(f"The price for a senior ticket is ${price * 0.75}")
+elif age >= 18:
+  print("You are old enough!.")
+  print(f"The price for an adult ticket is ${price}")
+else:
+  print("You are a child.")
+  print(f"The price for a child ticket is ${price * 0.85}")
+
+```
