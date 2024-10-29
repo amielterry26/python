@@ -43,7 +43,7 @@ Boolean: `is_raining = true`
 **integer division (return as an integer) :** //</br>
 **remainder:** %
 
-**<u>Augmented Assignment: </u>** </br>
+### <u>**<u>Augmented Assignment: </u>** </br></u>
 
 
 **Purpose:** If you don't want to do long hand arithmetic operators i.e. (friends = friends + 1), </br>
@@ -77,8 +77,10 @@ is_engineer = True
 
 print(type(age))
 ```
+
 output = <class 'int'>
 </br>
+
 ---
 **Example:** </br>
 ```python
@@ -95,7 +97,8 @@ print(gpa)
 output = 3
 
 ___
-**Important Note:** </br>
+<u>**Important Note:**</u> 
+</br>
 - booleans only output "True" or "False". Changing the value inside the variable when typecasting will mostly return true. </br>
 A good usecase for it would be to use it for user registration. 
 </br>
@@ -136,7 +139,7 @@ print(f"Hello {name}, you are {age} years old!")
 ```
 output = Hello amiel, you are 30 years old!
 ___
-**Important note:**
+<u>**Important note:**</u> </br>
 If you want to do anything to the store variable outside of printing it, you must define the data type (typecast) and before hand.
 </br>
 Also ensure that when typecasting, put `int()`, `float()`, `str()`, or `bool()` **_<u>before</u>_** `input()`. 
@@ -153,7 +156,7 @@ print(f"Hello {name}, you are {age} years old!")
 output : Hello amiel, you are 31 years old!
 </br>
 ## Concept 5: `if` statements
-if statements = can execute some code if a condition is True, otherwise can have secondary & tertiary conditional actions. 
+`if` statements = can execute some code if a condition is True, otherwise can have secondary & tertiary conditional actions. 
 Allows for basic decision-making. </br>
 (if, elif, else).
 
@@ -192,6 +195,7 @@ ___
 You can also use `booleans` with `if` statements. 
 if would be good with things like authentication and permission based applications. 
 </br>
+
 **Example 1:**
 ```python
 # Simulate correct credentials
@@ -235,7 +239,7 @@ else:
   print("Access denied. You must be at least 21 years old.")
 ```
 ___
-**Example 3 (where boolean is not contingent on input):**
+**Example 3** (where boolean is not contingent on input):
 ```python
 age = int(input("How old are you? "))
 has_ticket = True
