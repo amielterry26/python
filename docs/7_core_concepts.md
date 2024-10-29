@@ -1,7 +1,7 @@
 # This will be an overview of the 7 basic concepts of Python.
 
 ## Concept 1: Data types & Variables
-___
+
 **Variable** = a reusable container for a value (store values in it). 
 
 There are 4 main data types in python: integers(int), strings(str), booleans(boo), and floats(float).
