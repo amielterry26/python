@@ -34,7 +34,6 @@ Boolean: `is_raining = true`
 </br>
 </br>
 ## Concept 2: Basic Arithmetic Operations
-___
 ### <u>**Arithmetic**</u>
 #####
 **addition :** + </br>
@@ -63,10 +62,7 @@ friends += 1
 ` print(friend) = 6 `
 ```
 
-
 ## Concept 3: Typecasting
-___
-
 **Purpose :** The process of converting a variable from one data type to another: `str()`, `int()`, `float()`, `bool()`.
 </br>
 Note: You can find out what data type a variable is by using the `type` command.
@@ -127,7 +123,6 @@ output = true
 </br>
 
 ## Concept 4: User input (I/O)
-___
 This is how you get user input to store a variable to use later in the module. </br>
 `input()` is to store input into variable. </br>
 `print()` is to output the result. </br>
