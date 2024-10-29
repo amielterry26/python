@@ -55,14 +55,14 @@ It is performed by typing the variable and then adding the arithmetic Operation 
   </br> 
 
 ### <u>**Exampele:**</u>
-
+```python
 friends = 5
 
 friends += 1
 
 ` print(friend) = 6 `
-</br>
-</br>
+```
+
 
 ## Concept 3: Typecasting
 ___
@@ -72,7 +72,6 @@ ___
 Note: You can find out what data type a variable is by using the `type` command.
 </br>
 
----
 **Example:** </br>
 ```python
 name = "Amiel"
