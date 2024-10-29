@@ -257,5 +257,20 @@ elif age >= 18:
 else:
   print("You are a child.")
   print(f"The price for a child ticket is ${price * 0.85}")
+```
 
+## Concept 5: Logical Operators:
+Logical operators allows us to evaluate multiple conditions (`or`, `and`, `not`)
+- `or` - at least one conditions must be True
+- `and` - both conditions must be True
+- `not` - inverst the condition (not False, not True)
+
+```python
+temp = 25
+is_raining = False
+
+if temp > 35 or temp < 0 or is_raining: 
+    print("The outdoor event is cancelled")
+else:
+    print("The outdoor event is still scheduled")
 ```

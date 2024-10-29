@@ -1,18 +1,42 @@
 # This is a testing environment for Python scripts
-# Define the minimum age requirement
-minimum_age = 21
+# Without input()
+# temp = 25
+# is_raining = False
+#
+# if temp > 35 or temp < 0 or is_raining:
+#     print("The outdoor event is cancelled")
+# else:
+#     print("The outdoor event is still scheduled")
 
-# Ask the user for their age
-age = int(input("Please enter your age: "))
+# With input()
+raining = str(input("Is it raining outside? (yes or no) "))
+temp = int(input("What is the temperature? "))
 
-# Check if the user meets the age requirement
-if age >= minimum_age:
-    is_allowed_access = True
+if raining == "yes":
+    print("The event is cancelled.")
+elif raining == "no":
+    if 65 <= temp <= 65:
+        print("The event is cancelled")
+    else:
+        print("The event is cancelled.")
 else:
-    is_allowed_access = False
+    print("Invalid input for raining status.")
 
-# Use the Boolean variable in an if statement
-if is_allowed_access:
-    print("Access granted! Welcome to the restricted section.")
-else:
-    print("Access denied. You must be at least 21 years old.")
+# With user input & exit program command
+
+# raining = input("Is it raining outside? (yes or no) ").strip().lower()
+# temp = int(input("What is the temperature? "))
+#
+# # Check the conditions
+# if raining == "yes":
+#     print("The event is cancelled.")
+# elif raining == "no":
+#     if 65 <= temp <= 95:
+#         print("The event is still on.")
+#     else:
+#         print("The event has been cancelled.")
+# else:
+#     print("Invalid input for raining status.")
+
+
+
