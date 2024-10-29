@@ -95,7 +95,9 @@ gpa = int(gpa)
 
 print(gpa)
 ```
+
 output = 3
+
 ___
 **Important Note:** </br>
 - booleans only output "True" or "False". Changing the value inside the variable when typecasting will mostly return true. </br>
