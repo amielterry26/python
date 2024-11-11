@@ -12,7 +12,7 @@ I need to output good, better, best in a sentence after the calculations.
 import time
 
 print("Please answer all questions without any special characters ($ , . / etc.), only put the numeric values.")
-time.sleep(4)
+time.sleep(1)
 
 expenses = int(input("How much are your monthly expenses? "))
 col = expenses*12
@@ -20,7 +20,7 @@ good = col*2
 better = col*3
 best = col*3.5
 
-print(f"Your cost of living per year is ${col}.")
+print(f"Your cost of NET living per year is ${col}.")
 time.sleep(2)
 
 print("This is how much you need to make yearly to be classified as good, better, and best:\n")

@@ -95,9 +95,11 @@ best = gross_sal_need*3
 print()
 print("Below you will see a list of salaries you need to break even, followed by what classifies as 'good, better, "
       "and best'.")
-print(break_even, good, better, best)
-# This is for gross
-print(col)
+print(f"break even : ${break_even}")
+print(f"good : ${good}")
+print(f"better : ${better}")
+print(f"best : ${best}")
+
 
 # The next steps are to branch into different directories (test, main, deploy) done.
 # The following step will be to write all the conditional logic for whom, where, and monthly expenses both gross
