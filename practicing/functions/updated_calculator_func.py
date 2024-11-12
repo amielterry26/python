@@ -31,7 +31,6 @@ money = int(input("How much money do you make? "))
 per = str(input("yearly or hourly? "))
 
 
-
 # Logic
 if per == "yearly":
     salary(money)

@@ -6,6 +6,7 @@
 def too_young(age):
     print("You are too young to enter.")
 
+
 def too_old(age):
     print("you are too old.")
 
