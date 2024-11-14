@@ -47,20 +47,20 @@ medicare = .0145
 
 # Federal Tax Information in a Hashmap
 tax_brackets = [
-    {"min": 0, "max": 604, "rate": 0.10},
-    {"min": 604, "max": 2302, "rate": 0.12},
-    {"min": 2302, "max": 3667, "rate": 0.22},
-    {"min": 3667, "max": 7004, "rate": 0.24},
-    {"min": 7004, "max": 8894, "rate": 0.32},
-    {"min": 8894, "max": 22235, "rate": 0.35},
-    {"min": 22235, "max": float("inf"), "rate": 0.37}
+    {"min": 0, "max": 492, "rate": 0.10},         # 10% on income up to $492
+    {"min": 492, "max": 1706, "rate": 0.12},      # 12% on income between $492 - $1,706
+    {"min": 1706, "max": 3960, "rate": 0.22},     # 22% on income between $1,706 - $3,960
+    {"min": 3960, "max": 8918, "rate": 0.24},     # 24% on income between $3,960 - $8,918
+    {"min": 8918, "max": 11200, "rate": 0.32},    # 32% on income between $8,918 - $11,200
+    {"min": 11200, "max": 25000, "rate": 0.35},   # 35% on income between $11,200 - $25,000
+    {"min": 25000, "max": float("inf"), "rate": 0.37}  # 37% on income above $25,000
 ]
 
 
 # defining a function in relation to the hashmap
-def get_tax_rate(bi_weekly):
+def get_tax_rate(expenses):
     for bracket in tax_brackets:
-        if bracket["min"] <= bi_weekly <= bracket["max"]:
+        if bracket["min"] <= expenses <= bracket["max"]:
             return bracket["rate"]
     return None
 
