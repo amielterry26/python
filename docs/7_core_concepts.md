@@ -290,3 +290,56 @@ if temp >= 28 and is_sunny:
     print("It's too hot outside")
     print("It is Sunny")
 ```
+
+## Concept 6: Functions
+Functions are the building blocks of your applications. </br>
+There are two types of functions (per my definition): **building functions** & **logic functions**.</br>
+</br>
+**<u>Building Functions</u>** are building blocks needed to run your application. </br>
+They typically are not apart of the main application function but are instead functions you can call into the "play" or **Logic Function**.</br> 
+</br>
+**Example:**
+```python
+def hourly(amount):
+    result = amount * 80
+    print(f"You make ${result} per paycheck.")
+```
+This is an example of a building function. </br>
+Generally stacked toward the top of the module above the `def main():` function. </br>
+Stand Alone. 
+</br>
+</br>
+<u>**Logic Functions</u>** are functions that define the "play" or the "Logic" of the application.</br>
+This is what actually runs. </br> 
+</br>
+**Important to Note:** If you have a `While True` loop in your function, this is part of the **Logic Function** and the 
+**Building Functions** are left outside or above that. 
+**Example:**</br>
+```python
+def per_hour(money):
+    result = money * 2080
+    print(f"you make ${result} per year.")
+    answer = input("Do you want to know how much you make per paycheck? ")
+    if answer == "y":
+        result2 = money * 80
+        print(f"You make ${result2} per paycheck.")
+
+
+def main():
+    while True:
+        money = int(input("How much money do you make? "))
+        per = str(input("yearly or hourly? "))
+
+        # Logic
+        if per == "yearly":
+            salary(money)
+        elif per == "hourly":
+            per_hour(money)
+
+        answer = input("Do you want to run this again? ")
+        if answer != "y":
+            break
+
+
+main()
+```
