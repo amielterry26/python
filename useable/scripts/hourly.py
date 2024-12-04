@@ -9,7 +9,7 @@ month = week*4
 year = month*12
 
 # Output
-print(f"Based on the hourly rate of {hourly}, you make:\n")
+print(f"Based on the hourly rate of ${hourly}/hr, your gross income is:\n")
 print(f"daily: ${day}")
 print(f"weekly: ${week}")
 print(f"bi-weekly: ${biweekly}")
