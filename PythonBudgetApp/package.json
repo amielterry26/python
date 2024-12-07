@@ -1,0 +1,23 @@
+{
+  "name": "pythonbudget",
+  "version": "1.0.0",
+  "description": "A back/front end for a python based budget calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-strizhev/PythonAppFrontEnd.git#main"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-strizhev/PythonAppFrontEnd/issues"
+  },
+  "homepage": "https://github.com/peter-strizhev/PythonAppFrontEnd/tree/main#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}
